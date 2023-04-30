@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <section>
       <nav>
-        <img src="./HTML Practise Assets/FES.svg" alt="" />
+        <img src="./HTML Practise Assets/FES.svg" class="logo" alt="" />
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#discord">Discord</a></li>
@@ -17,57 +18,70 @@
         </ul>
       </nav>
       <header>
+        <div class="row">
         <div>
           <h1>Best place to learn frontend developing</h1>
-          <p>Go from zero to coding hero using this process</p>
+          <p class="subheader">
+            Go from zero to coding hero using this process
+          </p>
           <button>Start Now</button>
         </div>
         <figure>
           <img src="./HTML Practise Assets/laptop.png" alt="Home page image" />
         </figure>
+      </div>
       </header>
     </section>
     <main>
       <section id="about">
         <h2>About</h2>
-        <div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <p>Lorem ipsum dolor sit amet.</p>
+        <div class="row">
+        <div class="section__description">
+        <div class="section__description--wrapper">
+          <p class="section__description--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, dolorem alias. Provident.</p>
+          <p class="section__description--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla eveniet incidunt.</p>
         </div>
-        <figure><img src="./HTML Practise Assets/about.jpg" alt="" /></figure>
+        <figure class="about__img--wrapper">
+          <img src="./HTML Practise Assets/about.jpg" alt="" /></figure>
+      </div>
+    </div>
       </section>
 
       <section id="discord">
         <h2>Discord</h2>
-        <figure>
-            <img src="./HTML Practise Assets/discord.png" alt="Discord" />
+        <div class="row">
+        <div class="section__description">
+        <figure class="section__description--wrapper">
+          <img src="./HTML Practise Assets/discord.png" alt="Discord" />
         </figure>
         <div>
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>Lorem ipsum dolor sit amet.</p>
+          <p class="section__description--para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni laboriosam voluptas rerum!</p>
+          <p class="section__description--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint tenetur doloremque hic?</p>
         </div>
+      </div>
+    </div>
       </section>
 
       <section id="contact">
         <h2>Contact</h2>
         <form action="">
-            <span>Email</span>
-            <input type="text" placeholder="James@example.com">
-            <span>Mesage</span>
-            <textarea  type="text" placeholder="James@example.com"></textarea>
-            <button>Submit</button>
+          <span>Email</span>
+          <input type="text" placeholder="James@example.com" />
+          <span>Mesage</span>
+          <textarea type="text" placeholder="Stat your journey today!"></textarea>
+          <button>Contact us now!</button>
         </form>
       </section>
     </main>
     <footer>
-        <img src="./HTML Practise Assets/FES.svg" alt="">
-        <div>
-            <a href="#about">About</a>
-            <a href="#discord">Discord</a>
-            <a href="contact">Contact</a>
-            <a href="">Courses</a>
-        </div>
-        <p>Copyright CG Productions</p>
+      <img class="footer__logo" src="./HTML Practise Assets/FES.svg" alt="" />
+      <div class="footer__links">
+        <a class="footer__link" href="#about">About</a>
+        <a class="footer__link" href="#discord">Discord</a>
+        <a class="footer__link" href="contact">Contact</a>
+        <a class="footer__link" href="">Courses</a>
+      </div
+      <p>Copyright CG Productions</p>
     </footer>
   </body>
 </html>
